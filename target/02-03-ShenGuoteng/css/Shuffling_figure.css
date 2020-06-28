@@ -1,0 +1,41 @@
+  body{
+                margin:0;
+                padding:0;
+                width:100%;
+            }
+            #container{
+                width:100%;
+                height:600px;
+            }
+            #photos{
+                margin: 0;
+				padding:0;
+                position: absolute;
+                width:100%;
+                height:600px;
+            }
+            .pictures{
+	        position: absolute;
+	        width: 100%;
+	        height: 600px;
+	        list-style: none;
+			padding:0px;
+			z-index:4;
+            }
+            #buts{
+                position: absolute;
+                margin-top:-30px;
+                margin-left:800px;
+                z-index: 4;
+            }
+
+            .but{
+				margin-left:10px;
+                width:13px;
+                height:13px;
+                border-radius: 10px;
+                background-color:grey;
+                float:left;
+                margin-right: 6px;
+                cursor: pointer;
+            }

@@ -1,0 +1,50 @@
+/*搜索框*/
+* {box-sizing: border-box;}
+body{margin: 0;}
+div.search { padding-top: 7px; padding-right:200px;}
+form {
+  position: relative;
+  width: 300px;
+  /*margin: 0 auto;*/
+}
+.d6{ background-color:#000; }
+.d6 form {
+	 float: right;
+      height: 42px;
+}
+.d6 input{
+  height: 100%;
+  width: 0;
+  padding: 0 42px 0 15px;/*sun xu??????*/
+  border: none;
+  border-bottom: 1px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.d6 input:focus {
+  width: 250px;
+  z-index: 1;
+  border-bottom: 2px solid #fff;
+  color:#fff;/*搜索框内字体颜色*/
+}
+.d6 button {
+  background: #000;/*按钮颜色*/
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.d6 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+   color:#fff;/*放大镜颜色*/
+}

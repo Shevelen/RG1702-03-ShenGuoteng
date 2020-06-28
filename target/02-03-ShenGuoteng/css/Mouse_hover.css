@@ -1,0 +1,40 @@
+.demo,.img,.mask,.border{
+				width: 298px;
+				height: 230px;
+			}
+			.demo{
+				display: block;
+				position: relative;/*蒙影与图片的关系*/
+				margin: 0px auto;/**/
+			}
+			.iii{
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+			.mask{
+				position: absolute;/*蒙影与文字与图片的关系*/
+				top: 0px;
+				
+				left: 0;
+				/*border-radius: 50%;*//*蒙影的形状*/
+				color:rgba(255,255,255,0);/*字体的形状*/
+				-webkit-transition:all .5s ease-in;
+				transition:all .5s ease-in;
+			}
+			.demo:hover .mask{
+			background-color:rgba(0,0,0,0.8);
+			color:rgba(255,255,255,1);
+			}
+			.demo:hover .border{
+			-webkit-transform:rotate(180deg);
+			transform:rotate(180deg);
+		}
+		.info{
+			position: absolute;
+			width: 100%;
+			top: 25%;
+			left: 0;
+			text-align: center;
+			-webkit-transform:translateY(-50%);
+		}

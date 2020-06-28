@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+  body,ul,li,a {padding: 0;margin: 0;}
+    body {background-color:#e6e6e6;color: #fff;}	
+    ul li { float: left;display: inline-block;position: relative;width: 100px;line-height:60px;padding: 0 5px;cursor: pointer;z-index:10;}
+    ul li:hover {background-color:#288add;/*red*/z-index:10; height:60px }
+    ul li ul li{float:none; padding:0;z-index:10; }
+    ul li ul { position: absolute;display: none; width:200px;z-index:10; left:0; top:50px; }/*left top*/
+    ul li ul li:hover {background-color:#288add;width:200px;z-index:10;/*二级列表鼠标划过的样式*/  height:60px; }
+    ul li:hover ul { display: block;background-color:#fff;/*二级列表bgc*/	z-index:10;}
+    .nav{height: 60px;background-color:#000;/*width:1700px;/*一级列表长度*/z-index:10;	}
+    .navbar {margin-left:10px;z-index:10;} 
+    .fc {display: block;height: 60px;font-size: 15px;text-align: center;text-decoration: none;color:#fff; z-index:10;s}
+    .ec{ display: block;height: 60px;font-size: 15px;text-align: center;text-decoration: none;color:#000; width:200px;z-index:10; }
